@@ -1,0 +1,26 @@
+<ion-header>
+  <ion-navbar>
+    <button ion-button menuToggle>
+      <ion-icon name="menu"></ion-icon>
+    </button>
+    <ion-title>Lists</ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content padding>
+  <ion-list>
+    <h3>Calling Searches API</h3><hr/>
+    <div>
+      <ion-input class="input" type="text" [(ngModel)]="searchText" placeholder="Filter by Name"></ion-input>
+    </div>
+    <ion-input class="input" type="text" placeholder="Enter Food" [(ngModel)] ="foodName" name="foodName" (input)="onSearchLocationWithEvent($event)" autofocus></ion-input>
+    <button ion-button [disabled]="disabledSearchButton" (click) ="searchFood($event)" type="submit">Search</button>
+    <div *ngIf="!errorMessage">
+      <ion-item *ngFor="let report of foods | filter : searchText">
+        <h2>{{report.name}}</h2>
+        <p>Group: {{report.group}}, ndbno: {{report.ndbno}}</p><br/>
+      </ion-item>
+    </div>
+    <div style="color:red" *ngIf="errorMessage">{{errorMessage}}</div>
+  </ion-list>
+</ion-content>

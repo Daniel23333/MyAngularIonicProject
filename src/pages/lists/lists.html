@@ -9,16 +9,13 @@
 
 <ion-content padding>
   <ion-list>
-    <span>Filter by Name</span>
+    <h3>Calling Lists API</h3><hr/>
     <div>
-      <input type="text" [(ngModel)]="searchText" placeholder="Seach text"/>
+      <input type="text" [(ngModel)]="searchText" placeholder="Filter by Name: Seach text"/>
     </div>
     <ion-item *ngFor="let report of reports | filter : searchText" >
       <h2>{{report.name}}</h2>
-      <p>Group: {{report.group}}, Value: {{report.value}}, Unit: {{report.unit}}</p><br/>
-      <ul *ngFor="let measure of report.measures">
-        <li class="measure-list">Label: {{measure.label}}, Eqv: {{measure.eqv}}, Value: {{measure.value}}</li>
-      </ul>
+      <p>ID: {{report.id}}</p><br/>
     </ion-item>
   </ion-list>
 </ion-content>

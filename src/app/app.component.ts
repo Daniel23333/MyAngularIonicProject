@@ -3,10 +3,10 @@ import { Component, ViewChild } from '@angular/core';
 import { Platform, MenuController, Nav } from 'ionic-angular';
 
 import { HelloIonicPage } from '../pages/hello-ionic/hello-ionic';
-import { ListPage } from '../pages/list/list';
 import { AboutPage } from '../pages/about/about';
 import { FoodReportByNumPage } from '../pages/food-report-by-num/food-report-by-num';
 import { ListsPage } from '../pages/lists/lists';
+import { FoodReportByNamePage } from '../pages/food-report-by-name/food-report-by-name';
 
 import { StatusBar } from '@ionic-native/status-bar';
 import { SplashScreen } from '@ionic-native/splash-screen';
@@ -33,9 +33,9 @@ export class MyApp {
     // set our app's pages
     this.pages = [
       { title: 'Home', component: HelloIonicPage },
-      { title: 'List', component: ListPage },
-      { title: 'Food Report by Num', component: FoodReportByNumPage},
+      { title: 'Food Report by Number', component: FoodReportByNumPage},
       { title: 'Lists', component: ListsPage},
+      { title: 'Food Report by Name', component: FoodReportByNamePage},
       { title: 'About Us', component: AboutPage}
     ];
   }

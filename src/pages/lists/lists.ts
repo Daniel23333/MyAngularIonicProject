@@ -14,13 +14,13 @@ export class ListsPage {
   constructor(public navCtrl: NavController, public rest: RestProvider) {}
 
   ionViewDidLoad() {
-    this.getReports();
+    this.getReportsLists();
   }
 
-  getReports() {
-    this.rest.getReports()
+  getReportsLists() {
+    this.rest.getReportsLists()
        .subscribe(
-         reports => this.reports = reports.report.food.nutrients,
+         reports => this.reports = reports.list.item,
          error =>  this.errorMessage = <any>error
        );
   }

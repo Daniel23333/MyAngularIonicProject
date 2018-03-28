@@ -6,11 +6,10 @@ import { HttpClientModule } from '@angular/common/http';
 import { Ng2SearchPipeModule } from 'ng2-search-filter';
 
 import { HelloIonicPage } from '../pages/hello-ionic/hello-ionic';
-import { ItemDetailsPage } from '../pages/item-details/item-details';
-import { ListPage } from '../pages/list/list';
 import { AboutPage } from '../pages/about/about';
 import { FoodReportByNumPage } from '../pages/food-report-by-num/food-report-by-num';
 import { ListsPage } from '../pages/lists/lists';
+import { FoodReportByNamePage } from '../pages/food-report-by-name/food-report-by-name';
 
 import { StatusBar } from '@ionic-native/status-bar';
 import { SplashScreen } from '@ionic-native/splash-screen';
@@ -20,11 +19,10 @@ import { RestProvider } from '../providers/rest/rest';
   declarations: [
     MyApp,
     HelloIonicPage,
-    ItemDetailsPage,
-    ListPage,
     AboutPage,
     FoodReportByNumPage,
-    ListsPage
+    ListsPage,
+    FoodReportByNamePage
   ],
   imports: [
     Ng2SearchPipeModule,
@@ -36,11 +34,10 @@ import { RestProvider } from '../providers/rest/rest';
   entryComponents: [
     MyApp,
     HelloIonicPage,
-    ItemDetailsPage,
-    ListPage,
     AboutPage,
     FoodReportByNumPage,
-    ListsPage
+    ListsPage,
+    FoodReportByNamePage
   ],
   providers: [
     StatusBar,

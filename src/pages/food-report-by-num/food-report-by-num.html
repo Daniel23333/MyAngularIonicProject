@@ -3,15 +3,17 @@
     <button ion-button menuToggle>
       <ion-icon name="menu"></ion-icon>
     </button>
-    <ion-title>About Us</ion-title>
+    <ion-title>Food Report by Number</ion-title>
   </ion-navbar>
 </ion-header>
 
 <ion-content padding>
   <ion-list>
-    <span>Filter by Name</span>
+    <div class="header">
+      <h3>Calling Food Reports V1 API</h3><hr/>
+    </div>
     <div>
-      <input type="text" [(ngModel)]="searchText" placeholder="Seach text"/>
+      <input type="text" [(ngModel)]="searchText" placeholder="Filter by Name: Seach text"/>
     </div>
     <ion-item *ngFor="let report of reports | filter : searchText" >
       <h2>{{report.name}}</h2>
