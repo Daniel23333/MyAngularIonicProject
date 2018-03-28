@@ -11,9 +11,9 @@
   $ionic serve -l
 </pre>
 <p>I have consumed different APIs from USDA database.</p> 
-<p>For "Food Report by Name", I have used <strong>Dynamic url</u></strong> to call API. User enters the name of the food, e.g. cheese or butter, then hit search button. It will show the JSON fetched from API. If user entered non food name, like aaa, then it triggered alarm below</p>
-For "Food Report by Number" and "List", I have used <strong>static url</strong> to call API. All of 3 features are filter enabled, we can filter the result by typing in input text box.
-</p>
+<p>For "Food Report by Name", I have used <strong>Dynamic url</u></strong> to call <a href="https://ndb.nal.usda.gov/ndb/doc/apilist/API-SEARCH.md">Search API</a>. User can type the name of the foods, e.g. "cheese" or "butter", then hit search button. It will show the JSON fetched from API below. If user entered non-food-name, like "aaa", then it triggered alarm below.</p>
+<p>For "Food Report by Number" and "Lists", I have used <strong>Static url</strong> to call <a href="https://ndb.nal.usda.gov/ndb/doc/apilist/API-FOOD-REPORT.md">Report V1 API</a> and <a href="https://ndb.nal.usda.gov/ndb/doc/apilist/API-LIST.md">Lists API</a>.</p>
+<p>All of 3 features are filter enabled, we can filter the result by typing in input text box.</p>
 
 <h2>Project Requirement</h2>
 <h3>AngularJS Coding Challenge</h3>
