@@ -31,9 +31,8 @@ devices. </li>
  </ol>
 
 <p>API Information NDB API Website: http://ndb.nal.usda.gov/ndb/doc/index </p>
-<p>Food Report Docs: http://ndb.nal.usda.gov/ndb/doc/apilist/API-FOOD- REPORT.md </p>
-<p>Sample JSON: http://api.nal.usda.gov/ndb/reports/?ndbno=01009&amp;type=f&amp;format=json&amp;api_key=DEM
-O_KEY</p>
+<p>Food Report Docs: http://ndb.nal.usda.gov/ndb/doc/apilist/API-FOOD-REPORT.md </p>
+<p>Sample JSON: http://api.nal.usda.gov/ndb/reports/?ndbno=01009&amp;type=f&amp;format=json&amp;api_key=DEMO_KEY</p>
  
 
  
