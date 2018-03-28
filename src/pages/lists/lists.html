@@ -1,0 +1,24 @@
+<ion-header>
+  <ion-navbar>
+    <button ion-button menuToggle>
+      <ion-icon name="menu"></ion-icon>
+    </button>
+    <ion-title>Lists</ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content padding>
+  <ion-list>
+    <span>Filter by Name</span>
+    <div>
+      <input type="text" [(ngModel)]="searchText" placeholder="Seach text"/>
+    </div>
+    <ion-item *ngFor="let report of reports | filter : searchText" >
+      <h2>{{report.name}}</h2>
+      <p>Group: {{report.group}}, Value: {{report.value}}, Unit: {{report.unit}}</p><br/>
+      <ul *ngFor="let measure of report.measures">
+        <li class="measure-list">Label: {{measure.label}}, Eqv: {{measure.eqv}}, Value: {{measure.value}}</li>
+      </ul>
+    </ion-item>
+  </ion-list>
+</ion-content>
