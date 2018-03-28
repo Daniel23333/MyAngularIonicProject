@@ -1,4 +1,21 @@
 # MyAngularIonicProject
+<h2>Guidance</h2>
+<h4>Installation</h4>
+<pre>
+  $npm install –g cordova
+  $npm install –g ionic
+  $npm install
+</pre>
+<h4>Start</h4>
+<pre>
+  $ionic serve -l
+</pre>
+<p>I have consumed different APIs from USDA database.</p> 
+<p>For "Food Report by Name", I have used <strong>Dynamic url</u></strong> to call API. User enters the name of the food, e.g. cheese or butter, then hit search button. It will show the JSON fetched from API. If user entered non food name, like aaa, then it triggered alarm below</p>
+For "Food Report by Number" and "List", I have used <strong>static url</strong> to call API. All of 3 features are filter enabled, we can filter the result by typing in input text box.
+</p>
+
+<h2>Project Requirement</h2>
 <h3>AngularJS Coding Challenge</h3>
 <p>You will create an Ionic and Angular web application to showcase your Angular and
 JavaScript skills. The application will consume a web service and display the results for
