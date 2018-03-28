@@ -1,0 +1,9 @@
+page-hello-ionic {
+  .text{
+     font-family: 'Open sans', sans-serif; font-size: 14px;
+  }
+
+  .text::first-letter{
+     font-size: 150%;
+  }
+}
