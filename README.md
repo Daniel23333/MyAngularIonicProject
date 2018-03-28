@@ -2,7 +2,7 @@
 <h3>AngularJS Coding Challenge</h3>
 <p>You will create an Ionic and Angular web application to showcase your Angular and
 JavaScript skills. The application will consume a web service and display the results for
-browsing. You’ll use services, routing, and local storage. Everything from the user
+  browsing. You’ll use <i>services</i>, <i>routing</i>, and <i>local storage</i>. Everything from the user
 interface to the tooling will be evaluated. </p>
 <h3>Objective</h3>
 <p>Using the latest version of the Ionic CLI (3.5.0+), generate a new project that uses
